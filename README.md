@@ -24,28 +24,25 @@ chatbot_graphrag_local/
 ├── .gitignore
 ├── requirements.txt         # Dependências do projeto
 └── app.py                   # Interface web interativa (Streamlit)
----
+
 # 🛠️ Tecnologias Utilizadas
+
+* **LLM & Embeddings:** Ollama (`llama3.1:latest` e `nomic-embed-text:latest`)
+* **Banco Vetorial:** Chroma DB via LangChain
+* **Banco de Grafos:** NetworkX (em memória com persistência local)
+* **Orquestração:** LangChain & LangGraph
+* **Interface Gráfica:** Streamlit
+
 ---
-LLM & Embeddings: Ollama (llama3.1:latest e nomic-embed-text:latest)
 
-Banco Vetorial: Chroma DB via LangChain
-
-Banco de Grafos: NetworkX (em memória com persistência local)
-
-Orquestração: LangChain & LangGraph
-
-Interface Gráfica: Streamlit
----
 # ⚙️ Pré-requisitos e Instalação
----
-1. Instalar e Configurar o Ollama
+
+### 1. Instalar e Configurar o Ollama
 Certifique-se de ter o Ollama instalado e rodando em segundo plano no seu computador. Em seguida, baixe os modelos necessários executando no seu terminal:
 
-```text
+```bash
 ollama pull llama3.1:latest
 ollama pull nomic-embed-text:latest
-```
 
 2. Clonar/ Configurar o Repositório
 No diretório raiz do projeto, crie um ambiente virtual e instale as dependências:
