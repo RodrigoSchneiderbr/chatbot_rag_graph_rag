@@ -1,0 +1,15 @@
+langchain
+langchain-core
+langchain-ollama
+langchain-chroma
+langchain-community
+chromadb
+networkx
+python-dotenv
+pydantic
+streamlit
+pypdf
+langgraph
+langchain-community
+unstructured
+python-docx
